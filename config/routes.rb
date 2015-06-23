@@ -3,9 +3,10 @@ Rails.application.routes.draw do
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
+  get 'reports/main'
+  post 'reports/thank_you'
   # You can have the root of your site routed with "root"
-  root 'reports#all_data'
+  root 'reports#main'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
